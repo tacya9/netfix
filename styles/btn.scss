@@ -1,0 +1,15 @@
+.c-btn {
+	text-transform: uppercase;
+	color: #f65261;
+	padding: 14px 20px;
+	border: none;
+	font: normal 900 20px/1 'Montserrat';
+	border-radius: 3px;
+	background: rgba(255,255,255,0.2);
+
+	&.m-another-btn {
+		background: #f65261;
+		color: white;
+		padding: 18px 46px;
+	}
+}

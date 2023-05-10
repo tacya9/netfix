@@ -1,23 +1,76 @@
 .c-main-layout {
 	min-height: 100%;
 }
+
 .c-main-layout__wrapper {
 	max-width: 1200px;
-	padding: 0 60px;
+	border-right: 60px solid transparent;
+	border-left: 60px solid transparent;
 	margin: 0 auto;
 	box-sizing: border-box;
-	background: lightseagreen;
+	height: 100%;
+	position: relative;
 
 	@media screen and (max-width: 767px) {
-		padding: 0 18px;
+		border-right: 18px solid transparent;
+		border-left: 18px solid transparent;
 	}
 }
+
 .c-main-layout__header {
-	height: 400px;
+	border-bottom: 10px solid #555555;
+	background: url("../../pictures/header-background.png") repeat-x center black; /* добавить black */
+	height: 396px;
+	padding-top: 15px;
+	box-sizing: border-box;
+
+	.c-logo {
+		position: absolute;
+		top: 3px;
+	}
+
+	.c-main-layout__header-add-btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
 }
+
+.c-main-layout__header-search-bar {
+	max-width: 840px;
+	font-size: 0;
+	padding: 108px 120px;
+
+	.c-main-layout__header-form {
+		margin-top: 46px;
+	}
+}
+.c-main-layout__header-form {
+	display: flex;
+
+	> li {
+		margin-left: 15px;
+
+		&:first-child {
+			flex-grow: 1;
+			margin-left: 0;
+		}
+	}
+}
+
 .c-main-layout__main {
-
+	background: #232323;
+	min-height: calc(100vh - 396px - 70px);
 }
-.c-main-layout__footer {
 
+.c-main-layout__footer {
+	background: #424242;
+	height: 70px;
+
+	.c-logo {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
 }
