@@ -1,5 +1,7 @@
 .c-main-layout {
 	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .c-main-layout__wrapper {
@@ -18,8 +20,8 @@
 }
 
 .c-main-layout__header {
-	border-bottom: 10px solid #555555;
-	background: url("../../pictures/header-background.png") repeat-x center black; /* добавить black */
+	border-bottom: 10px solid var(--color-emperor);
+	background: url("../pictures/header-background.png") repeat-x center var(--color-black);
 	height: 396px;
 	padding-top: 15px;
 	box-sizing: border-box;
@@ -28,43 +30,37 @@
 		position: absolute;
 		top: 3px;
 	}
+}
 
-	.c-main-layout__header-add-btn {
-		position: absolute;
-		top: 0;
-		right: 0;
-	}
+.c-main-layout__header-add-btn {
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 .c-main-layout__header-search-bar {
 	max-width: 840px;
 	font-size: 0;
 	padding: 108px 120px;
-
-	.c-main-layout__header-form {
-		margin-top: 46px;
-	}
 }
+
 .c-main-layout__header-form {
 	display: flex;
+	margin-top: 46px;
+	gap: 15px;
 
-	> li {
-		margin-left: 15px;
-
-		&:first-child {
-			flex-grow: 1;
-			margin-left: 0;
-		}
+	> li:first-child {
+		flex-grow: 1;
 	}
 }
 
 .c-main-layout__main {
-	background: #232323;
-	min-height: calc(100vh - 396px - 70px);
+	background: var(--color-mine-shaft);
+	flex-grow: 1;
 }
 
 .c-main-layout__footer {
-	background: #424242;
+	background: var(--color-tundora);
 	height: 70px;
 
 	.c-logo {

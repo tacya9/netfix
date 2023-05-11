@@ -1,15 +1,37 @@
 .c-btn {
 	text-transform: uppercase;
-	color: #f65261;
+	color: var(--color-carnation);
 	padding: 14px 20px;
 	border: none;
-	font: normal 900 20px/1 'Montserrat';
+	font: normal 900 1.25rem/1 var(--font-primary);;
 	border-radius: 3px;
-	background: rgba(255,255,255,0.2);
+	background: none;
+	overflow: hidden;
+	//background: rgba(255,255,255,0.2);
+	//background: white;
+	position: relative;
+	z-index: 0;
+
+	&::before {
+		content: "";
+		position: absolute;
+		inset: 0;
+		background: var(--color-white);
+		opacity: 0.2;
+	}
 
 	&.m-another-btn {
-		background: #f65261;
-		color: white;
+		background: var(--color-carnation);
+		color: var(--color-white);
 		padding: 18px 46px;
+
+		&::before {
+			opacity: 0;
+		}
 	}
+}
+
+.c-btn__name {
+	position: relative;
+	z-index: 1;
 }
