@@ -20,7 +20,6 @@
 }
 
 .c-main-layout__header {
-	border-bottom: 10px solid var(--color-emperor);
 	background: url("../pictures/header-background.png") repeat-x center var(--color-black);
 	height: 396px;
 	padding-top: 15px;
@@ -40,14 +39,21 @@
 
 .c-main-layout__header-search-bar {
 	max-width: 840px;
-	font-size: 0;
-	padding: 108px 120px;
+	padding: 90px 120px;
+
+	@media screen and (max-width: 767px) {
+		padding: 90px 0;
+	}
 }
 
 .c-main-layout__header-form {
 	display: flex;
 	margin-top: 46px;
 	gap: 15px;
+
+	@media screen and (max-width: 479px) {
+		flex-wrap: wrap;
+	}
 
 	> li:first-child {
 		flex-grow: 1;
@@ -57,6 +63,7 @@
 .c-main-layout__main {
 	background: var(--color-mine-shaft);
 	flex-grow: 1;
+	border-top: 10px solid var(--color-emperor);
 }
 
 .c-main-layout__footer {
