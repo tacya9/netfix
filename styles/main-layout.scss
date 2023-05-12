@@ -39,7 +39,6 @@
 
 .c-main-layout__header-search-bar {
 	max-width: 840px;
-	font-size: 0;
 	padding: 90px 120px;
 
 	@media screen and (max-width: 767px) {
@@ -52,12 +51,12 @@
 	margin-top: 46px;
 	gap: 15px;
 
-	> li:first-child {
-		flex-grow: 1;
-	}
-
 	@media screen and (max-width: 479px) {
 		flex-wrap: wrap;
+	}
+
+	> li:first-child {
+		flex-grow: 1;
 	}
 }
 
