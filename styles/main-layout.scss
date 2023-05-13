@@ -54,16 +54,20 @@
 	@media screen and (max-width: 479px) {
 		flex-wrap: wrap;
 	}
-
-	> li:first-child {
-		flex-grow: 1;
-	}
 }
 
 .c-main-layout__main {
 	background: var(--color-mine-shaft);
 	flex-grow: 1;
 	border-top: 10px solid var(--color-emperor);
+}
+
+.c-main-layout__main-menu {
+
+	.c-menu {
+		margin: 20px -14px 0;
+		max-width: 744px;
+	}
 }
 
 .c-main-layout__footer {
