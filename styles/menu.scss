@@ -1,0 +1,36 @@
+@import "mixins";
+
+.c-menu {
+	font-size: 0;
+	white-space: nowrap;
+	overflow-x: auto;
+
+	> li {
+		display: inline-block;
+		position: relative;
+		padding-bottom: 12px;
+
+		&.m-active::before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			right: 12px;
+			left: 12px;
+			border-bottom: 3px solid var(--color-carnation);
+		}
+	}
+}
+
+.c-menu__link {
+	font: normal 600 1rem/1 var(--font-primary);
+	text-decoration: none;
+	color: var(--color-white);
+	text-transform: uppercase;
+	padding: 12px 14px;
+	display: inline-block;
+	position: relative;
+
+	&:focus {
+		@extend %focus-border-on-after;
+	}
+}

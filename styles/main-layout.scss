@@ -55,7 +55,7 @@
 		flex-wrap: wrap;
 	}
 
-	> li:first-child {
+	.c-search-input {
 		flex-grow: 1;
 	}
 }
@@ -64,6 +64,14 @@
 	background: var(--color-mine-shaft);
 	flex-grow: 1;
 	border-top: 10px solid var(--color-emperor);
+}
+
+.c-main-layout__main-menu {
+
+	.c-menu {
+		margin: 20px -14px 0;
+		max-width: 744px;
+	}
 }
 
 .c-main-layout__footer {

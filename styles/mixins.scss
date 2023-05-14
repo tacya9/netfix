@@ -1,0 +1,10 @@
+%focus-border-on-after {
+	&::after {
+		content: "";
+		position: absolute;
+		inset: 1px;
+		border: 2px solid var(--color-carnation);
+		box-shadow: 0 0 0 1px var(--color-white);
+		border-radius: 2px;
+	}
+}
