@@ -23,7 +23,7 @@
 	}
 
 	&:focus {
-		@extend %focus-border;
+		@extend %focus-border-on-after;
 	}
 
 	&.m-large {

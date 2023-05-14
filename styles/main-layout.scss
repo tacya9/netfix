@@ -54,6 +54,10 @@
 	@media screen and (max-width: 479px) {
 		flex-wrap: wrap;
 	}
+
+	.c-search-input {
+		flex-grow: 1;
+	}
 }
 
 .c-main-layout__main {
