@@ -1,0 +1,32 @@
+@import "mixins";
+
+.c-select {
+	display: inline-block;
+	position: relative;
+
+	&:focus-within {
+		@extend %focus-border-on-after;
+	}
+
+	&::before {
+		content: "";
+		position: absolute;
+		background: url(../svg/down-arrow.svg) no-repeat;
+		background-size: 12px 12px;
+		width: 12px;
+		height: 12px;
+		top: 50%;
+		right: 12px;
+		transform: translateY(-50%);
+	}
+}
+.c-select__bar {
+	font: normal 600 1rem/1 var(--font-primary);
+	text-transform: uppercase;
+	background: var(--color-mine-shaft);
+	border: none;
+	color: var(--color-white);
+	outline: none;
+	padding: 22px 26px 22px 16px;
+	appearance: none;
+}

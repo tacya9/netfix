@@ -67,11 +67,57 @@
 }
 
 .c-main-layout__main-menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	border-bottom: 2px solid var(--color-tundora);
+	position: relative;
+
+	&::before {
+		content: "";
+		border-bottom: 1px solid var(--color-black);
+		position: absolute;
+		bottom: -4px;
+		right: 0;
+		left: 0;
+	}
 
 	.c-menu {
 		margin: 20px -14px 0;
-		max-width: 744px;
+		flex-grow: 1;
 	}
+
+	.c-select {
+		margin: 12px -14px 0 0;
+	}
+}
+
+.c-main-layout__main-number-of-films {
+	margin-top: 28px;
+
+	> span {
+		font-weight: bold;
+	}
+}
+
+.c-main-layout__main-cards {
+	margin: 30px 0 74px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 60px;
+
+	@media screen and (max-width: 991px){
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	@media screen and (max-width: 639px){
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr);
+	}
+
+
 }
 
 .c-main-layout__footer {
