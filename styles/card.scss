@@ -5,6 +5,7 @@
 
 .c-card__info {
 	margin-top: 20px;
+	min-height: 24px;
 
 	> p {
 		margin-top: 8px;
@@ -13,12 +14,15 @@
 		font-size: 0.875rem;
 	}
 }
-.c-card__info-year {
+.c-card__year-info {
 	font-size: 0.875rem;
 	float: right;
 	padding: 4px 16px;
 	border: 1px solid var(--color-emperor);
 	border-radius: 3px;
-	box-sizing: border-box;
-	display: inline-block;
+}
+.c-card__info-movie-title {
+	font-size: 1.125rem;
+	line-height: 1.3rem;
+	color: var(--color-white);
 }
