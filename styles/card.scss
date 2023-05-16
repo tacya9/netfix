@@ -1,11 +1,17 @@
 .c-card {
+	display: inline-block;
 	color: var(--color-white);
 	max-width: 320px;
+
+	> img {
+		max-width: 100%;
+	}
 }
 
 .c-card__info {
 	margin-top: 20px;
 	min-height: 24px;
+	text-align: left;
 }
 .c-card__year-info {
 	font-size: 0.875rem;

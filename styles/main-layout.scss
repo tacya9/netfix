@@ -76,6 +76,8 @@
 	justify-content: flex-end;
 	border-bottom: 2px solid var(--color-tundora);
 	position: relative;
+	align-items: flex-end;
+	gap: 10px;
 
 	&::before {
 		content: "";
@@ -87,12 +89,12 @@
 	}
 
 	.c-menu {
-		margin: 20px -14px 0;
+		margin: 0 -14px -3px;
 		flex-grow: 1;
 	}
 
 	.c-select {
-		margin: 12px -14px 0 0;
+		margin: 0 -14px -1px 0;
 	}
 }
 
