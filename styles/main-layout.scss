@@ -64,6 +64,10 @@
 	background: var(--color-mine-shaft);
 	flex-grow: 1;
 	border-top: 10px solid var(--color-emperor);
+
+	.c-film-number-title {
+		margin-top: 28px;
+	}
 }
 
 .c-main-layout__main-menu {
@@ -89,16 +93,6 @@
 
 	.c-select {
 		margin: 12px -14px 0 0;
-	}
-}
-
-.c-main-layout__main-number-of-films {
-	margin-top: 28px;
-	font-size: 1rem;
-	color: var(--color-white);
-
-	> span {
-		font-weight: bold;
 	}
 }
 
