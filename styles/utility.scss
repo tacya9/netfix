@@ -3,3 +3,9 @@
 		display: none !important;
 	}
 }
+
+.u-clearfix::after {
+	content: "" !important;
+	display: table !important;
+	clear: both !important;
+}

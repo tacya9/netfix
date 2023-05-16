@@ -1,0 +1,15 @@
+.c-grid {
+	margin: 30px 0 74px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 60px;
+	text-align: center;
+
+	@media screen and (max-width: 991px){
+		grid-template-columns: 1fr 1fr;
+	}
+
+	@media screen and (max-width: 639px){
+		grid-template-columns: 1fr;
+	}
+}

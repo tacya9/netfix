@@ -4,6 +4,7 @@
 	font-size: 0;
 	white-space: nowrap;
 	overflow-x: auto;
+	display: inline-block;
 
 	> li {
 		display: inline-block;
@@ -14,8 +15,8 @@
 			content: "";
 			position: absolute;
 			bottom: 0;
-			right: 12px;
-			left: 12px;
+			right: 14px;
+			left: 14px;
 			border-bottom: 3px solid var(--color-carnation);
 		}
 	}
